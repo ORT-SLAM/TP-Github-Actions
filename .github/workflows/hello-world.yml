@@ -3,7 +3,7 @@ name: Hello Github Actions
 on: [push]
 
 jobs:
-  build:
+  say-hello:
     runs-on: ubuntu-latest
     steps:
       - name: Affichage d'un message
