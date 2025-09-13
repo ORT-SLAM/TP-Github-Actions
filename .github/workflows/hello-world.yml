@@ -1,13 +1,10 @@
 name: Hello Github Actions
 
+run-name: 🚀 Workflow run from "on push" event
+
 on:
   push: # Lorsqu'on push un commit
     branches: [main]
-  pull_request: # Lorsqu'on crée une pull request
-    branches: [main]
-  # schedule: Lorsqu'on dispatch un workflow
-    # - cron: "0 10 * * 1" # tous les lundis à 10h
-  workflow_dispatch:
 
 jobs:
   say-hello:
