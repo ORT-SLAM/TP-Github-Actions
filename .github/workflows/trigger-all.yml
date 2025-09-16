@@ -4,6 +4,11 @@ run-name: 🚀 Trigger-all.yml
 
 on:
   workflow_dispatch:
+    inputs:
+      workflow_name:
+        description: "Nom du workflow à lancer"
+        required: true
+        default: "hello-world.yml"
 
 permissions:
   contents: read
