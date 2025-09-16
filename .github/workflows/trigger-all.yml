@@ -5,8 +5,8 @@ run-name: 🚀 Trigger-all.yml
 on:
   workflow_dispatch:
 
-# env:
-#   GH_TOKEN: ${{ github.token }}
+env:
+  GH_TOKEN: ${{ github.token }}
 
 jobs:
   trigger-all:
@@ -14,3 +14,8 @@ jobs:
     steps:
       - name: Lister les workflows
         run: gh workflow list -R ${{ github.repository }}
+
+      - name: Lancer workflow 1
+        run: gh workflow run -R ${{ github.repository }} hello-world.yml
+
+      # Ainsi de suite pour les autres workflows
