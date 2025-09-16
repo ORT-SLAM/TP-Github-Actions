@@ -1,6 +1,6 @@
 name: Hello Github Actions
 
-run-name: 🚀 Workflow run from "on push" event
+run-name: 🚀 Hello-world.yml
 
 on:
   push: # Lorsqu'on push un commit
@@ -9,7 +9,7 @@ on:
   #   branches: [main]
   # workflow_dispatch:
   # schedule:
-    # - cron: "0 10 * * 1" # tous les lundis à 10h
+  # - cron: "0 10 * * 1" # tous les lundis à 10h
 
 jobs:
   say-hello:
