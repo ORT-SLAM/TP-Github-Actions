@@ -5,8 +5,8 @@ run-name: 🚀 Trigger-all.yml
 on:
   workflow_dispatch:
 
-env:
-  GH_TOKEN: ${{ github.token }}
+# env:
+#   GH_TOKEN: ${{ github.token }}
 
 jobs:
   trigger-all:
