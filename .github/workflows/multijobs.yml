@@ -1,0 +1,19 @@
+name: Multi-Job Workflow
+
+run-name: 🚀 Multi-Jobs.yml
+
+on: push
+
+jobs:
+  build: # build job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Étape 1
+        run: echo "Étape 1"
+
+  test: # test job
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Étape 2
+        run: echo "Étape 2"
