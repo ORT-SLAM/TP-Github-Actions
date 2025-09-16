@@ -5,6 +5,10 @@ run-name: 🚀 Trigger-all.yml
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  actions: write
+
 env:
   GH_TOKEN: ${{ github.token }}
 
