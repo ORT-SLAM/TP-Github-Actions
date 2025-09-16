@@ -20,6 +20,6 @@ jobs:
         run: gh workflow list -R ${{ github.repository }}
 
       - name: Lancer workflow 1
-        run: gh workflow run -R ${{ github.repository }} hello-world
+        run: gh workflow run -R ${{ github.repository }} hello-world.yml
 
       # Ainsi de suite pour les autres workflows
