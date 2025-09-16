@@ -1,0 +1,16 @@
+name: Trigger All Workflow
+
+run-name: 🚀 Trigger-all.yml
+
+on:
+  workflow_dispatch:
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  trigger-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lister les workflows
+        run: gh workflow list -R ${{ github.repository }}
